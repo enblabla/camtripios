@@ -16,7 +16,20 @@ class ViajesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.navigationItem.backBarButtonItem?.title = "salir";
+        
         createViajes();
+    }
+    
+    override func viewWillDisappear(animated : Bool) {
+        super.viewWillDisappear(animated)
+        
+        if (self.isMovingFromParentViewController()){
+            
+            //eliminamos la variable del localStorage
+            let localStorage = NSUserDefaults.standardUserDefaults();
+            localStorage.removeObjectForKey("id_usuario");
+        }
     }
 
     func createViajes(){

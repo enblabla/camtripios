@@ -19,6 +19,24 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        //COMPROBAR QUE SI TENEMOS LA ID ALMACENADA, DIRECTAMENTE MOSTRAMOS LA VENTANA PRINCIPAL
+        let localStorage = NSUserDefaults.standardUserDefaults();
+        
+        
+        
+        if let id_usuario = localStorage.stringForKey("id_usuario"){
+            //Existe la variable id_usuario en el localStorage
+            //redireccionamos a la ventana principal, el listado
+            let viewLista = self.storyboard?.instantiateViewControllerWithIdentifier("listaViajes") as! ViajesTableViewController;
+            self.navigationItem.title = "salir";
+            self.navigationController?.pushViewController(viewLista, animated: false);
+            
+        }
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
         let tapGestureRecognizer : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyBoard")
         
@@ -183,7 +201,7 @@ class ViewController: UIViewController {
             
             //redireccionamos a la ventana principal, el listado
             let viewLista = self.storyboard?.instantiateViewControllerWithIdentifier("listaViajes") as! ViajesTableViewController;
-            
+            self.navigationItem.title = "salir";
             self.navigationController?.pushViewController(viewLista, animated: true);
             
         }
@@ -200,6 +218,7 @@ class ViewController: UIViewController {
             //redireccionamos a la ventana principal, el listado
             let viewLista = self.storyboard?.instantiateViewControllerWithIdentifier("listaViajes") as! ViajesTableViewController;
             
+            self.navigationItem.title = "salir";
             self.navigationController?.pushViewController(viewLista, animated: true);
             
         }
