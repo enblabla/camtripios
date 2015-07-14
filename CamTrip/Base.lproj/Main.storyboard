@@ -88,18 +88,25 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="CamTrip .png" translatesAutoresizingMaskIntoConstraints="NO" id="Die-U5-25r">
                                 <rect key="frame" x="220" y="98" width="161" height="86"/>
                             </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="fB7-LB-1TM">
+                                <rect key="frame" x="282" y="352" width="37" height="37"/>
+                                <color key="color" red="0.89411764709999997" green="0.043137254899999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0jo-ei-aWD" firstAttribute="top" secondItem="Die-U5-25r" secondAttribute="bottom" constant="8" id="0Gi-CR-Qxy"/>
                             <constraint firstAttribute="centerY" secondItem="0jo-ei-aWD" secondAttribute="centerY" id="7CI-gz-hgs"/>
+                            <constraint firstItem="fB7-LB-1TM" firstAttribute="top" secondItem="jFp-qB-x79" secondAttribute="bottom" constant="8" id="7ei-hu-Zoy"/>
                             <constraint firstItem="0jo-ei-aWD" firstAttribute="leading" secondItem="f2c-ct-Fvp" secondAttribute="leadingMargin" id="8Dg-HB-THq"/>
+                            <constraint firstAttribute="centerX" secondItem="fB7-LB-1TM" secondAttribute="centerX" id="TFk-Fw-G3a"/>
                             <constraint firstAttribute="centerX" secondItem="Die-U5-25r" secondAttribute="centerX" id="iVz-jF-859"/>
                             <constraint firstItem="0jo-ei-aWD" firstAttribute="trailing" secondItem="f2c-ct-Fvp" secondAttribute="trailingMargin" id="oSQ-DR-9tq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VQ2-cI-Ofi"/>
                     <connections>
+                        <outlet property="loading" destination="fB7-LB-1TM" id="vfc-CI-ZpB"/>
                         <outlet property="txtemail" destination="qU1-up-Q0C" id="qh4-cR-N9U"/>
                         <outlet property="txtpass" destination="8Pf-nF-We4" id="RBJ-yp-Gcx"/>
                     </connections>
@@ -111,7 +118,7 @@
         <!--CamTrip-->
         <scene sceneID="8P3-tn-TXP">
             <objects>
-                <tableViewController title="CamTrip" id="Dtw-mw-kYT" customClass="ViajesTableViewController" customModule="CamTrip" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="listaViajes" title="CamTrip" id="Dtw-mw-kYT" customClass="ViajesTableViewController" customModule="CamTrip" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="246" sectionHeaderHeight="22" sectionFooterHeight="22" id="CuE-az-tPe">
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
