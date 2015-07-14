@@ -13,6 +13,15 @@
 		EB79BA831B4AA515004C471F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB79BA821B4AA515004C471F /* Images.xcassets */; };
 		EB79BA861B4AA515004C471F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB79BA841B4AA515004C471F /* LaunchScreen.xib */; };
 		EB79BA921B4AA515004C471F /* CamTripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79BA911B4AA515004C471F /* CamTripTests.swift */; };
+		EB79BA9C1B4AA7CF004C471F /* CamTrip .png in Resources */ = {isa = PBXBuildFile; fileRef = EB79BA9B1B4AA7CF004C471F /* CamTrip .png */; };
+		EB79BA9F1B4AA976004C471F /* ViajesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79BA9E1B4AA976004C471F /* ViajesTableViewController.swift */; };
+		EB79BAA11B4AA984004C471F /* ViajeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79BAA01B4AA984004C471F /* ViajeTableViewCell.swift */; };
+		EB79BAA51B4AAA06004C471F /* Viaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79BAA41B4AAA06004C471F /* Viaje.swift */; };
+		EB79BAA91B4AAAC7004C471F /* foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB79BAA61B4AAAC7004C471F /* foto.jpg */; };
+		EB79BAAA1B4AAAC7004C471F /* foto1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB79BAA71B4AAAC7004C471F /* foto1.jpg */; };
+		EB79BAAB1B4AAAC7004C471F /* foto2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB79BAA81B4AAAC7004C471F /* foto2.jpg */; };
+		EB79BAAE1B4AAF8C004C471F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79BAAD1B4AAF8C004C471F /* CollectionViewController.swift */; };
+		EB79BAB11B4AAFCD004C471F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79BAB01B4AAFCD004C471F /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,15 @@
 		EB79BA8B1B4AA515004C471F /* CamTripTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamTripTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB79BA901B4AA515004C471F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB79BA911B4AA515004C471F /* CamTripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamTripTests.swift; sourceTree = "<group>"; };
+		EB79BA9B1B4AA7CF004C471F /* CamTrip .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CamTrip .png"; sourceTree = "<group>"; };
+		EB79BA9E1B4AA976004C471F /* ViajesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViajesTableViewController.swift; sourceTree = "<group>"; };
+		EB79BAA01B4AA984004C471F /* ViajeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViajeTableViewCell.swift; sourceTree = "<group>"; };
+		EB79BAA41B4AAA06004C471F /* Viaje.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viaje.swift; sourceTree = "<group>"; };
+		EB79BAA61B4AAAC7004C471F /* foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foto.jpg; sourceTree = "<group>"; };
+		EB79BAA71B4AAAC7004C471F /* foto1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foto1.jpg; sourceTree = "<group>"; };
+		EB79BAA81B4AAAC7004C471F /* foto2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foto2.jpg; sourceTree = "<group>"; };
+		EB79BAAD1B4AAF8C004C471F /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		EB79BAB01B4AAFCD004C471F /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +95,11 @@
 		EB79BA781B4AA515004C471F /* CamTrip */ = {
 			isa = PBXGroup;
 			children = (
+				EB79BAAC1B4AAF73004C471F /* ListaFotos */,
+				EB79BAA31B4AA9F1004C471F /* Model */,
+				EB79BA9D1B4AA960004C471F /* ListaViajes */,
 				EB79BA7B1B4AA515004C471F /* AppDelegate.swift */,
-				EB79BA7D1B4AA515004C471F /* ViewController.swift */,
+				EB79BAA21B4AA9AD004C471F /* Login */,
 				EB79BA7F1B4AA515004C471F /* Main.storyboard */,
 				EB79BA821B4AA515004C471F /* Images.xcassets */,
 				EB79BA841B4AA515004C471F /* LaunchScreen.xib */,
@@ -90,6 +111,10 @@
 		EB79BA791B4AA515004C471F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EB79BAA61B4AAAC7004C471F /* foto.jpg */,
+				EB79BAA71B4AAAC7004C471F /* foto1.jpg */,
+				EB79BAA81B4AAAC7004C471F /* foto2.jpg */,
+				EB79BA9B1B4AA7CF004C471F /* CamTrip .png */,
 				EB79BA7A1B4AA515004C471F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +135,40 @@
 				EB79BA901B4AA515004C471F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB79BA9D1B4AA960004C471F /* ListaViajes */ = {
+			isa = PBXGroup;
+			children = (
+				EB79BA9E1B4AA976004C471F /* ViajesTableViewController.swift */,
+				EB79BAA01B4AA984004C471F /* ViajeTableViewCell.swift */,
+			);
+			name = ListaViajes;
+			sourceTree = "<group>";
+		};
+		EB79BAA21B4AA9AD004C471F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EB79BA7D1B4AA515004C471F /* ViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		EB79BAA31B4AA9F1004C471F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB79BAA41B4AAA06004C471F /* Viaje.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EB79BAAC1B4AAF73004C471F /* ListaFotos */ = {
+			isa = PBXGroup;
+			children = (
+				EB79BAAD1B4AAF8C004C471F /* CollectionViewController.swift */,
+				EB79BAB01B4AAFCD004C471F /* CollectionViewCell.swift */,
+			);
+			name = ListaFotos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +220,7 @@
 				TargetAttributes = {
 					EB79BA751B4AA515004C471F = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = NZ9BB45RRX;
 					};
 					EB79BA8A1B4AA515004C471F = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -193,8 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB79BA811B4AA515004C471F /* Main.storyboard in Resources */,
+				EB79BAA91B4AAAC7004C471F /* foto.jpg in Resources */,
 				EB79BA861B4AA515004C471F /* LaunchScreen.xib in Resources */,
+				EB79BAAA1B4AAAC7004C471F /* foto1.jpg in Resources */,
 				EB79BA831B4AA515004C471F /* Images.xcassets in Resources */,
+				EB79BA9C1B4AA7CF004C471F /* CamTrip .png in Resources */,
+				EB79BAAB1B4AAAC7004C471F /* foto2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB79BAAE1B4AAF8C004C471F /* CollectionViewController.swift in Sources */,
 				EB79BA7E1B4AA515004C471F /* ViewController.swift in Sources */,
+				EB79BAA11B4AA984004C471F /* ViajeTableViewCell.swift in Sources */,
+				EB79BAB11B4AAFCD004C471F /* CollectionViewCell.swift in Sources */,
+				EB79BAA51B4AAA06004C471F /* Viaje.swift in Sources */,
 				EB79BA7C1B4AA515004C471F /* AppDelegate.swift in Sources */,
+				EB79BA9F1B4AA976004C471F /* ViajesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +411,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CamTrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +424,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CamTrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

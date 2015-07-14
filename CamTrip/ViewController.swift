@@ -10,9 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var txtemail: UITextField!
+    
+    @IBOutlet weak var txtpass: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let tapGestureRecognizer : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyBoard")
+        
+        self.view.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    func dismissKeyBoard() {
+        self.txtemail.resignFirstResponder()
+        self.txtpass.resignFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +33,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func login(sender: AnyObject) {
+        
+    }
 
+    
+    @IBAction func registrar(sender: AnyObject) {
+        
+    }
+    
 }
 
